@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../types/@hyperlane-xyz/interfaces/index.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,KAAK,4BAA4B,MAAM,0CAA0C,CAAC;AAC9F,YAAY,EAAE,4BAA4B,EAAE,CAAC;AAC7C,OAAO,KAAK,KAAK,KAAK,MAAM,kBAAkB,CAAC;AAC/C,YAAY,EAAE,KAAK,EAAE,CAAC;AACtB,YAAY,EAAE,QAAQ,EAAE,MAAM,eAAe,CAAC;AAC9C,YAAY,EAAE,iBAAiB,EAAE,MAAM,wBAAwB,CAAC"}

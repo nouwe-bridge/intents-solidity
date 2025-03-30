@@ -1,0 +1,50 @@
+# Full reference https://github.com/foundry-rs/foundry/tree/master/crates/config
+
+[profile.default]
+  auto_detect_solc = false
+  block_timestamp = 1_680_220_800 # March 31, 2023 at 00:00 GMT
+  bytecode_hash = "none"
+  evm_version = "shanghai"
+  fuzz = { runs = 1_000 }
+  gas_reports = ["*"]
+  optimizer = true
+  optimizer_runs = 10_000
+  out = "out"
+  script = "script"
+  solc = "0.8.25"
+  src = "src"
+  test = "test"
+  allow_paths = ["node_modules"]
+  libs = ["/home/fajar/espresso/intents-framework/node_modules", "node_modules", "lib"]
+
+[profile.ci]
+  fuzz = { runs = 10_000 }
+  verbosity = 4
+
+[etherscan]
+  arbitrum-sepolia = { key = "${API_KEY_ARBISCAN}" }
+  base-sepolia = { key = "${API_KEY_BASESCAN}" }
+  sepolia = { key = "${API_KEY_ETHERSCAN}" }
+  holesky = { key = "${API_KEY_ETHERSCAN}" }
+  optimism-sepolia = { key = "${API_KEY_OPTISCAN}" }
+  sonic-blaze = { key = "${API_KEY_SONICSCAN}" }
+
+[fmt]
+  bracket_spacing = true
+  int_types = "long"
+  line_length = 120
+  multiline_func_header = "all"
+  number_underscore = "thousands"
+  quote_style = "double"
+  tab_width = 4
+  wrap_comments = true
+
+[rpc_endpoints]
+  arbitrum-sepolia = "https://sepolia-rollup.arbitrum.io/rpc"
+  cappucino-testnet = "https://nouwe-bridge.comingdotsoon.xyz"
+  base-sepolia = "https://sepolia.base.org"
+  sepolia = "https://1rpc.io/sepolia"
+  holesky = "https://1rpc.io/holesky"
+  optimism-sepolia = "https://sepolia.optimism.io"
+  sonic-blaze = "https://rpc.blaze.soniclabs.com"
+
